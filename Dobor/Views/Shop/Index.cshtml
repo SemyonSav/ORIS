@@ -1,0 +1,26 @@
+﻿@using Dobor.ViewModels
+@using Dobor.Views.Shared.Components
+@model List<ProductViewModel>
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="~/css/shopPage.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/sideMenu.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/productCard.css" asp-append-version="true" />
+
+
+<div class="main">
+    <div class="products-list">
+        @foreach (var product in Model)
+        {
+            @(await Html.RenderComponentAsync<ProductCardComponent>(RenderMode.ServerPrerendered, new { Product = product }))
+        }
+    </div>
+    <div class="side-menu">
+        @(await Html.RenderComponentAsync<SideMenuComponent>(RenderMode.ServerPrerendered, new {Tags = @ViewData["Tags"], News = @ViewData["News"]}))
+    </div>
+</div>

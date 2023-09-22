@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Dobor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Dobor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\news.css",
+      "PackagePath": "staticwebassets\\css\\news.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\newsPage.css",
+      "PackagePath": "staticwebassets\\css\\newsPage.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\productCard.css",
+      "PackagePath": "staticwebassets\\css\\productCard.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\productPage.css",
+      "PackagePath": "staticwebassets\\css\\productPage.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\shopPage.css",
+      "PackagePath": "staticwebassets\\css\\shopPage.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\sideMenu.css",
+      "PackagePath": "staticwebassets\\css\\sideMenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Semen\\Desktop\\Dobor\\Dobor\\Dobor\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Dobor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Dobor.props",
+      "PackagePath": "build\\Dobor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Dobor.props",
+      "PackagePath": "buildMultiTargeting\\Dobor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Dobor.props",
+      "PackagePath": "buildTransitive\\Dobor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

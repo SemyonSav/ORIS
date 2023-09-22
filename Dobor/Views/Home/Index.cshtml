@@ -1,0 +1,25 @@
+﻿@using Dobor.ViewModels
+@using Dobor.Views.Shared.Components
+@model List<NewsViewModel>
+@{
+    ViewData["Title"] = "News";
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="~/css/newsPage.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/news.css" asp-append-version="true" />
+<link rel="stylesheet" type="text/css" href="~/css/sideMenu.css" asp-append-version="true" />
+
+<div class="main">
+    <div class="news-list">
+        @foreach (var news in Model)
+        {
+            @(await Html.RenderComponentAsync<NewsComponent>(RenderMode.ServerPrerendered, new {News=news}))
+        }
+    </div>
+    <div class="side-menu">
+        @(await Html.RenderComponentAsync<SideMenuComponent>(RenderMode.ServerPrerendered, new { Tags=@ViewData["Tags"], News=Model.SkipLast(Model.Count - 4) }))
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #121213;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 0 8%;
+}
+
+.side-menu {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 23.5%;
+}

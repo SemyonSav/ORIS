@@ -1,0 +1,89 @@
+﻿@using Dobor.ViewModels
+@model List<ReviewViewModel>
+@{
+    ProductViewModel product = (ProductViewModel) ViewData["Product"];
+    ViewData["Title"] = "Shop";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/productPage.css" asp-append-version="true" />
+
+<div class="main">
+    <div class="product">
+        <div class="product__info">
+            <img class="product__info__image" src="@product.PhotoPath" alt="Image" />
+            <div class="product__info__info">
+                <h2 class="product__info__name">@product.Name</h2>
+                <div class="product__info__price">
+                    @if (product.OldPrice != product.Price)
+                    {
+                        <span class="price-old">
+                            <s>$@product.OldPriceView</s>
+                        </span>
+                    }
+                    <span class="price-new">$@product.PriceView</span>
+                </div>
+                <div class="product__info__desc">
+                    <p>@product.ShortDesc</p>
+                </div>
+                <div class="product__info__cart">
+                    <button>Add to cart</button>
+                </div>
+                <div class="product__info__category">
+                    <span>
+                        Category:
+                    </span>
+                    <span>
+                        <a class="category-link" href="#">
+                            @product.Category
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="product__reviews">
+            <div class="product__reviews__nav">
+                <div id="description-btn" class="product__reviews__nav-button product__reviews__nav-button--active">
+                    <span>Description</span>
+                </div>
+                <div id="reviews-btn" class="product__reviews__nav-button">
+                    <span>Reviews (@Model.Count)</span>
+                </div>
+            </div>
+            <div class="product__reviews__description">
+                <p>
+                    @product.Description
+                </p>
+            </div>
+            <div class="product__reviews__reviews" style="display: none;">
+                @if (Model.Count > 0)
+                {
+                    foreach (var el in Model)
+                    {
+                        <div class="review">
+                            <div class="review__info">
+                                <div class="review__profile">
+                                    <img src="https://dfge.de/wp-content/uploads/blank-profile-picture-973460_640.png" alt="profile"/>
+                                    <span>@el.AuthorName</span>
+                                </div>
+                                <div class="review__date">
+                                    @el.DateFormatted
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p>@el.Content</p>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="review review--empty">
+                        There are no reviews yet.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</div>

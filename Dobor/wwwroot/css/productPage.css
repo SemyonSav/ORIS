@@ -1,0 +1,196 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #121213;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.product {
+    width: 84%;
+    margin: 60px auto;
+    padding: 0 8%;
+}
+
+.product__info {
+    display: flex;
+    gap: 50px;
+}
+
+product__info__image {
+    width: 50%;
+}
+
+.product__info__name {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.product__info__price {
+    display: flex;
+    gap: 8px;
+    color: #ff2c54;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.price-old {
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.price-new {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.product__info__desc {
+    margin-top: 35px;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.product__info__desc p {
+    color: #c1c6c9;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product__info__cart {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.product__info__cart button {
+    width: 160px;
+    height: 42px;
+    background-color: #ff2c54;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.product__info__cart button:hover {
+    background-color: #e5284b;
+}
+
+.product__info__category {
+    display: flex;
+    gap: 5px;
+    color: #222222;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.category-link {
+    color: #666666;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-link:hover {
+    color: #ff2c54;
+}
+
+.product__reviews {
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.product__reviews__nav {
+    display: flex;
+}
+
+.product__reviews__nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 44px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: central;
+}
+
+.product__reviews__nav-button--active {
+    background-color: white;
+    color: #ff2c54;
+    transition: all 0.3s ease-in-out;
+}
+
+.product__reviews__nav-button--active:hover {
+    color: black;
+}
+
+.product__reviews__description {
+    padding: 60px 40px;
+}
+
+.product__reviews__description p {
+    color: #c1c6c9;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+.review {
+    color: #c1c6c9;
+    display: flex;
+    gap: 20px;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.review::after {
+    position:absolute;
+    bottom:0;
+    left: 40px;
+    width:90%;
+    border-bottom:1px solid white;
+    content:"";
+}
+
+.review__info {
+    width: 20%;
+}
+
+.review__profile {
+    display: flex;
+    gap: 10px;
+}
+
+.review__profile img {
+    width: 15%;
+    border-radius: 5%;
+}
+
+.review__date {
+    margin-top: 8px;
+}

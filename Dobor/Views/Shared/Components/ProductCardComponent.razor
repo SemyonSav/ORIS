@@ -1,0 +1,39 @@
+﻿@using Dobor.ViewModels
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<div class="product-card">
+    <div class="product-card__image">
+        @if (Product.OldPrice != Product.Price)
+        {
+            <div class="product-card__sale">
+                <span>Sale!</span>
+            </div>
+        }
+        <img alt="Product" src="@Product.PhotoPath"/>
+    </div>
+    <span class="product-card__name">
+        <a href="/shop/@Product.Id">
+            @Product.Name
+        </a>
+    </span>
+    <div class="product-card__price">
+        @if (Product.OldPrice != Product.Price)
+        {
+            <span class="price--old">
+                <s>$@Product.OldPriceView</s>
+            </span>
+        }
+        <span class="price-new">
+            $@Product.PriceView
+        </span>
+    </div>
+    
+</div>
+
+@code {
+    [Parameter]
+    public ProductViewModel Product { get; set; }
+}

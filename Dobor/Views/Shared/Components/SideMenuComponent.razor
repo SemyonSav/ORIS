@@ -1,0 +1,124 @@
+﻿@using Dobor.ViewModels
+
+<div class="side-menu-container">
+    <div class="ad">
+        <img src="https://new.axilthemes.com/themes/papr/wp-content/uploads/2019/08/clientbanner2-9.jpg" alt="ad" />
+    </div>
+    <div class="categories">
+        <div class="side-menu__block-title">
+            <h3>Categories</h3>
+        </div>
+        <div class="categories__content">
+            <div class="category">
+                <img alt="Accessories" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/2019/08/home-03-post-img-02.jpg" />
+                <span>Accessories</span>
+            </div>
+            <div class="category">
+                <img alt="Adventure" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/2019/08/post-img-01.jpg" />
+                <span>Adventure</span>
+            </div>
+            <div class="category">
+                <img alt="Technology" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/2019/08/Technology.jpg" />
+                <span>Technology</span>
+            </div>
+            <div class="category">
+                <img alt="Golf" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/2019/11/golf.jpg" />
+                <span>Golf</span>
+            </div>
+        </div>
+    </div>
+    <div class="recent-news">
+        <div class="recent-news__nav">
+            <div class="nav-element nav-element--current">
+                <span>RECENT</span>
+            </div>
+            <div class="nav-element">
+                <span>POPULAR</span>
+            </div>
+            <div class="nav-element">
+                <span>TRENDY</span>
+            </div>
+        </div>
+        <div class="recent-news__content">
+            <ul class="recent-news__content-list">
+                @foreach (var news in News)
+                {
+                    <li>
+                        <img alt="img" src="@news.PhotoPath"/>
+                        <div class="recent-news__news-content">
+                            <p>@news.Title</p>
+                            <div class="news-content__author">
+                                <span>By</span>
+                                <a>
+                                    <span>@news.Author</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="tags">
+        <div class="side-menu__block-title">
+            <h3>Tags</h3>
+        </div>
+        <div class="tags-table">
+            @foreach (var tag in Tags)
+            {
+                <a href="#">
+                    <div class="tag">
+                        @tag.Name.ToLower()
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+    <div class="instagram">
+        <div class="side-menu__block-title">
+            <h3>Instagram</h3>
+        </div>
+        <div class="instagram__content">
+            <div class="instagram__content__author">
+                <a href="#">
+                    <div class="instagram-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
+                            <path fill="white" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                        </svg>
+                    </div>
+                    <span class="instagram-author">
+                        axilthemes
+                    </span>
+                </a>
+            </div>
+            <div class="instagram__content__gallery">
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/141988110_254903689371269_2230803479599243629_nthumb.jpg" />
+                </div>
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/141839376_2936514369917935_4016571315941196759_nthumb.jpg" />
+                </div>
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/141089166_114281290521790_6806988619559217725_nthumb.jpg" />
+                </div>
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/141894700_231719725109889_123836291213030030_nthumb.jpg" />
+                </div>
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/142105915_842073806359300_5086671651692912917_nthumb.jpg" />
+                </div>
+                <div class="gallery-image">
+                    <img alt="img" src="https://new.axilthemes.com/themes/papr/wp-content/uploads/sb-instagram-feed-images/143012370_1075187099671571_2884878776177104312_nthumb.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<TagViewModel> Tags { get; set; }
+
+    [Parameter]
+    public IEnumerable<NewsViewModel> News { get; set; }
+}
